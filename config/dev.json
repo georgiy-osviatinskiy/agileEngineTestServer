@@ -1,0 +1,19 @@
+{
+    "port": 3000,
+    "apiKey": "23567b218376f79d9415",
+    "agileEngineServerUrl": "http://interview.agileengine.com:80",
+    "dev": {
+        "host": "localhost",
+        "port": 3306,
+        "database": "agileTestTask",
+        "username": "root",
+        "password": "root",
+        "charset": "utf8mb4",
+        "dialect": "mysql",
+        "connectionRetryCount": 5,
+        "maxConnections": 10,
+        "delayBeforeReconnect": 3000,
+        "showErrors": true,
+        "logging": true
+    }
+}

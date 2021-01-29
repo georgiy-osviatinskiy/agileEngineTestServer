@@ -1,0 +1,17 @@
+const path = require("path");
+const DEFAULT_ENVIRONMENT = "dev";
+
+function getEnv () {
+    for (let i = 0; i < process.argv.length - 1; i++) {
+        if (process.argv[i] === "--env") {
+            return process.argv[i+1];
+        }
+    }
+
+    return process.env.NODE_ENV || DEFAULT_ENVIRONMENT;
+}
+
+
+module.exports = {
+    config: path.resolve(__dirname, "config", getEnv() + ".json")
+};
